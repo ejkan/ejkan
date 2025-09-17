@@ -1,6 +1,5 @@
 import { useState, useEffect, useRef } from 'react';
-import pfp from './imgs/pfp.webp';
-
+import pfp from '../assets/imgs/profile.webp';
 const cardbody = {
     padding: '1rem',
     borderRadius: '.75rem',
