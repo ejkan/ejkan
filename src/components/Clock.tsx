@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef } from 'react';
 import "tailwindcss";
 
+
 const clockStyle = {
     color: "hsl(351, 80%, 80%)",
     marginTop: ".5rem",
