@@ -1,5 +1,7 @@
 import { useState, useEffect, useRef } from 'react';
-import pfp from '../assets/imgs/profile.webp';
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-expect-error
+import pfp from '@/assets/imgs/profile.webp';
 const cardbody = {
     padding: '1rem',
     borderRadius: '.75rem',
