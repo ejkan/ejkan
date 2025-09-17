@@ -1,8 +1,8 @@
-import './App.css'
 import Clock from './components/Clock';
 import Greeting from './components/Greeting';
 import UserCard from './components/UserCard';
 import Welcome from "./components/Welcome";
+import Footer from './components/Footer';
 
 function App() {
 
@@ -12,6 +12,7 @@ function App() {
           <Greeting />
           <UserCard />
           <Clock />
+          <Footer />
       </div>
   )
 }

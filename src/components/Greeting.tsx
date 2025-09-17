@@ -1,13 +1,13 @@
 import { useState, useEffect, useRef } from 'react';
-import './styles/Animations.css';
-
+import "tailwindcss";
 
 const greetingStyle = {
     color: "hsl(351, 78%, 71%)",
-    padding: ".25rem",
+    padding: "1rem",
     fontFamily: "Krub",
     fontWeight: "400",
-    fontSize: "1rem",
+    fontSize: "1.5rem",
+    lineHeight: "auto",
 } as const;
 
 const Greeting = () => {

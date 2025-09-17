@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from 'react';
-import './styles/Animations.css';
+import "tailwindcss";
 
 const clockStyle = {
     color: "hsl(351, 80%, 80%)",

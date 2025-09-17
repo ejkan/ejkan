@@ -1,19 +1,21 @@
 import { useState, useEffect, useRef } from 'react';
 import pfp from './imgs/pfp.webp';
-import './styles/Animations.css';
 
 const cardbody = {
     padding: '1rem',
     borderRadius: '.75rem',
     textAlign: 'center',
     backgroundColor: 'hsl(351, 80%, 70%)',
-    maxWidth: '20rem',
-    margin: '1rem auto'
+    maxWidth: '25rem',
+    margin: '2rem auto',
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
 } as const;
 
 const cardfont = {
     color: "hsl(18, 72%, 93%)",
-    margin: ".625rem",
+    margin: "1rem",
     fontFamily: "Krub",
     fontWeight: "500",
     fontSize: "1rem",
@@ -31,12 +33,14 @@ const cardpic = {
     border: '.5rem solid hsl(18, 72%, 93%)',
     borderRadius: '50%',
     width: '80%',
-    height: '80%'
+    height: '80%',
 } as const;
 
-const Avatar = () => ( <img src={pfp} alt="Profile Picture" style={cardpic} /> );
-const UserName = () => ( <h3 style={cardheader}>จิรัญญา นวลละออง</h3> );
-const UserBio = () => ( <p style={cardfont}>นักศึกษาชั้นปีที่ 3</p> );
+const Avatar = () => (<img src={pfp} alt="Profile Picture" style={cardpic}/>);
+const UserName = () => (<h3 style={cardheader}>จิรัญญา นวลละออง</h3>);
+const SchoolYear = () => (<p style={cardfont}>นักศึกษาชั้นปีที่ 3</p>);
+const SchoolMajor = () => (<p style={cardfont}>สาขาเทคโนโลยีสารสนเทศ</p>);
+const School = () => (<p style={cardfont}>คณะวิทยาศาสตร์ มหาวิทยาลัยศิลปากร</p>);
 
 const UserCard = () => {
     const [isInView, setIsInView] = useState(false);
@@ -72,12 +76,9 @@ const UserCard = () => {
         >
             <Avatar />
             <UserName />
-            <UserBio />
-            <p style={cardfont}>
-                สาขาเทคโนโลยีสารสนเทศ</p>
-            <p style={cardfont}>
-                คณะวิทยาศาสตร์ มหาวิทยาลัยศิลปากร</p>
-            <a href={"https://ejkan.link"} target="_blank" rel="noopener noreferrer" style={cardfont}>👉🏼 อยากจ้างทางนี้นะคะ 👈🏼</a>
+            <SchoolYear />
+            <SchoolMajor />
+            <School />
         </div>
     );
 };
