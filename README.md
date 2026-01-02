@@ -16,9 +16,8 @@
 </p>
 
 <p align="center">
-  <a href="https://ejkan.vercel.app" target="blank">My deployed website is available here! 👩🏼‍💻
+  <a href="https://ejkan.me" target="blank">🕸️
 </p>
-<h5 align="center">But, 🛑 improved version will be deployed soon...er ka.</h5>
 
 <h3 align="center">📨 Connect with me 📨</h3>
 
