@@ -1,4 +1,3 @@
-// @ts-expect-error image import
 import pfp from '@/assets/imgs/profile.webp';
 
 const UserCard = () => {

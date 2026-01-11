@@ -1,19 +1,32 @@
-const Footer = () => {
+import { Linkedin, Mail, Instagram, Figma } from 'lucide-react';
+
+/*
+ * Footer Component
+ * Displays social media links and contact info.
+ * Icons provided by lucide-react.
+ */
+export default function Footer() {
     return (
-        <footer className="w-full py-4 text-center mt-auto animate-fade-in animate-delay-400">
-            <div className="inline-block px-6 py-2 bg-white/30 backdrop-blur-md rounded-full border border-white/40 shadow-sm text-sm text-gray-600 font-['Krub']">
-                <p className="mb-1">
-                    ขับเคลื่อนโดย
-                    <a href="https://react.dev" target="_blank" rel="noopener noreferrer" className="font-bold text-pink-500 mx-1 hover:text-pink-600 transition-colors">React</a>
-                    เเละ
-                    <a href="https://vite.dev" target="_blank" rel="noopener noreferrer" className="font-bold text-purple-500 mx-1 hover:text-purple-600 transition-colors">Vite</a>
-                </p>
-                <p>
-                    ให้บริการโดย
-                    <a href="https://github.com/pages" target="_blank" rel="noopener noreferrer" className="font-bold text-gray-700 mx-1 hover:text-black transition-colors">GitHub Pages</a>
-                </p>
-            </div>
+        <footer style={{
+            display: 'flex',
+            justifyContent: 'center',
+            gap: '2rem',
+            padding: '2rem',
+            marginTop: 'auto',
+            backgroundColor: 'transparent'
+        }}>
+            <a href="https://figma.com/@ejdsin" target="_blank" rel="noopener noreferrer" style={{ color: '#444' }}>
+                <Figma size={24} />
+            </a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" style={{ color: '#0A66C2' }}>
+                <Linkedin size={24} />
+            </a>
+            <a href="https://instagram.com/ejkan_" target="_blank" rel="noopener noreferrer" style={{ color: '#E1306C' }}>
+                <Instagram size={24} />
+            </a>
+            <a href="mailto:ejaekan@pm.me" style={{ color: '#444' }}>
+                <Mail size={24} />
+            </a>
         </footer>
     );
 }
-export default Footer;
