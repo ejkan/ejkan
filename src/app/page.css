@@ -1,0 +1,131 @@
+/*
+ * HomePage Styles
+ */
+
+.home-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    /* Push footer to bottom */
+    width: 100%;
+    min-height: 100vh;
+    padding: 2rem;
+    /* Added bottom padding */
+    box-sizing: border-box;
+    overflow-x: hidden;
+    /* Prevent horizontal scroll only */
+}
+
+.hero-section {
+    display: flex;
+    flex-direction: column;
+    /* Mobile: Stack vertically */
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    flex-grow: 1;
+    /* Take available space */
+    gap: 2rem;
+}
+
+/* Desktop layout: Title | Image | Subtitle */
+@media (min-width: 1024px) {
+    .hero-section {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1400px;
+        /* Limit max width on large screens */
+    }
+}
+
+.hero-title-container,
+.hero-subtitle-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.hero-title {
+    font-family: var(--font-lato), sans-serif;
+    font-size: 2.5rem;
+    font-weight: 800;
+    line-height: 1.2;
+    text-align: left;
+    display: block;
+    width: 100%;
+    color: var(--color-text);
+}
+
+.hero-title span {
+    font-weight: 700;
+    color: var(--color-primary);
+}
+
+.hero-subtitle {
+    font-family: var(--font-playfair), serif;
+    font-style: italic;
+    font-size: 1.2rem;
+    color: var(--color-text);
+    margin-right: 1rem;
+    text-align: right;
+    display: block;
+    width: 100%;
+}
+
+.hero-subtitle span {
+    font-weight: 700;
+    color: var(--color-primary);
+}
+
+@media (min-width: 1024px) {
+    .hero-title {
+        text-align: left;
+    }
+
+    .hero-subtitle {
+        text-align: right;
+    }
+
+    .hero-title-container {
+        justify-content: flex-start;
+    }
+
+    .hero-subtitle-container {
+        justify-content: flex-end;
+    }
+}
+
+.hero-image-center {
+    flex: 1;
+    /* or flex: 0 0 auto if fixed size wanted */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-image-wrapper {
+    width: 100%;
+    max-width: 20rem;
+    display: flex;
+    justify-content: center;
+}
+
+.profile-image {
+    width: 100%;
+    height: auto;
+    /* Maintain aspect ratio */
+    object-fit: cover;
+    border-radius: 15px;
+    /* Soft rounded corners */
+    border: 5px solid var(--color-secondary);
+    box-shadow: 0 10px 30px var(--color-primary);
+}
+
+@media (min-width: 1024px) {
+    .profile-image-wrapper {
+        max-width: 25rem;
+        /* Larger on desktop */
+    }
+}

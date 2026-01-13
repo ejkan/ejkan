@@ -1,3 +1,5 @@
+'use client';
+
 import { useState, useEffect } from 'react';
 import { Sun, Moon, Laptop } from 'lucide-react';
 import './ThemeSwitcher.css';
@@ -5,12 +7,20 @@ import './ThemeSwitcher.css';
 type Theme = 'system' | 'light' | 'dark';
 
 const ThemeSwitcher = () => {
-    const [theme, setTheme] = useState<Theme>(() => {
-        const savedTheme = localStorage.getItem('theme') as Theme | null;
-        return savedTheme || 'system';
-    });
+    const [theme, setTheme] = useState<Theme>('system');
+    const [mounted, setMounted] = useState(false);
 
     useEffect(() => {
+        setMounted(true);
+        const savedTheme = localStorage.getItem('theme') as Theme | null;
+        if (savedTheme) {
+            setTheme(savedTheme);
+        }
+    }, []);
+
+    useEffect(() => {
+        if (!mounted) return;
+
         const applyTheme = (themeToApply: Theme) => {
             if (themeToApply === 'system') {
                 const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
@@ -32,7 +42,7 @@ const ThemeSwitcher = () => {
 
         mediaQuery.addEventListener('change', handleChange);
         return () => mediaQuery.removeEventListener('change', handleChange);
-    }, [theme]);
+    }, [theme, mounted]);
 
     const getNextTheme = (): Theme => {
         if (theme === 'system') return 'light';
@@ -45,6 +55,8 @@ const ThemeSwitcher = () => {
     };
 
     const renderIcon = () => {
+        if (!mounted) return <Laptop size={20} />; // Prevent hydration mismatch
+
         switch (theme) {
             case 'light':
                 return <Sun size={20} />;

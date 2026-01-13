@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import Contact from '../components/Contact';
 import './HomePage.css';
-import profileImg from '../assets/imgs/pfp.png?w=800&format=webp';
+import profileImg from '../assets/imgs/pfp.avif';
 
 /*
  * HomePage Component
