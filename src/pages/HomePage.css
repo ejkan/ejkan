@@ -2,16 +2,9 @@
  * HomePage Styles
  */
 
-:root {
-    --color-primary: hsl(309, 6%, 58%);
-    --color-text: hsl(232, 17%, 35%);
-}
-
 body {
     margin: 0;
     font-family: 'Inter', sans-serif;
-    background-color: var(--color-bg);
-    color: var(--color-text);
     min-height: 100vh;
 }
 
@@ -68,17 +61,19 @@ body {
     text-align: left;
     display: block;
     width: 100%;
+    color: var(--color-text);
 }
 
 .hero-title span {
     font-weight: 700;
+    color: var(--color-primary);
 }
 
 .hero-subtitle {
     font-family: 'Playfair Display', serif;
     font-style: italic;
     font-size: 1.2rem;
-    color: hsl(232, 17%, 35%);
+    color: var(--color-text);
     margin-right: 1rem;
     text-align: right;
     display: block;
@@ -87,6 +82,7 @@ body {
 
 .hero-subtitle span {
     font-weight: 700;
+    color: var(--color-primary);
 }
 
 @media (min-width: 1024px) {
@@ -124,8 +120,8 @@ body {
     object-fit: cover;
     border-radius: 15px;
     /* Soft rounded corners */
-    border: 5px solid hsl(37, 98%, 85%);
-    box-shadow: 0 10px 30px hsl(37, 98%, 75%);
+    border: 5px solid var(--color-secondary);
+    box-shadow: 0 10px 30px var(--color-primary);
 }
 
 @media (min-width: 1024px) {

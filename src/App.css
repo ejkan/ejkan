@@ -1,6 +1,33 @@
 /* CSS Cleaned up */
+:root {
+    /* Light Theme Colors (Default) */
+    --color-bg: #f2e9e4;
+    --color-text: #4a4e69;
+    --color-primary: #9a8c98;
+    --color-secondary: #c9ada7;
+    --color-accent: #22223b;
+}
+
+[data-theme='dark'] {
+    /* Dark Theme Colors */
+    --color-bg: #22223b;
+    --color-text: #f2e9e4;
+    --color-primary: #c9ada7;
+    --color-secondary: #9a8c98;
+    --color-accent: #4a4e69;
+}
+
 #root {
     /* Reset root styles to allow pages to control full layout */
     width: 100%;
     min-height: 100vh;
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body {
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    transition: background-color 0.3s ease, color 0.3s ease;
 }

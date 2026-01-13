@@ -1,10 +1,21 @@
 /// <reference types="vite/client" />
 
-// Add these lines to teach TypeScript about CSS, WebP, etc.
-declare module '*.css';
-declare module '*.webp';
-declare module '*.png';
-declare module '*.jpeg';
-declare module '*.gif';
-declare module '*.svg';
-declare module '*.heic';
+declare module '*?w=800&format=webp' {
+    const output: string;
+    export default output;
+}
+
+declare module '*&as=metadata' {
+    const output: {
+        src: string;
+        width: number;
+        height: number;
+        format: string;
+    };
+    export default output;
+}
+
+declare module '*&as=srcset' {
+    const output: string;
+    export default output;
+}

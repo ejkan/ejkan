@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
-import Footer from '../components/Footer';
+import Contact from '../components/Contact';
 import './HomePage.css';
-import profileImg from '../assets/imgs/pfp.png';
+import profileImg from '../assets/imgs/pfp.png?w=800&format=webp';
 
 /*
  * HomePage Component
@@ -16,7 +16,7 @@ export default function HomePage() {
                 <div className="hero-title-container">
                     <h1 className="hero-title">
                         Call me <br />
-                        <span style={{ color: 'var(--color-primary)' }}>ejkan_</span>
+                        <span>ejkan_</span>
                     </h1>
                 </div>
 
@@ -41,12 +41,12 @@ export default function HomePage() {
                 <div className="hero-subtitle-container">
                     <p className="hero-subtitle">
                         👩🏼‍🎨 Crafting digital experiences<br />
-                        <span style={{ color: 'var(--color-primary)' }}>with a touch of delightful. 🤗</span>
+                        <span>with a touch of delightful. 🤗</span>
                     </p>
                 </div>
             </main>
 
-            <Footer />
+            <Contact />
         </div>
     );
 }

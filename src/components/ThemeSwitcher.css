@@ -1,0 +1,23 @@
+/*Theme switcher button, which changed with theme variants.*/
+.theme-switcher-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-text);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/*Theme switcher button, when hovered in light.*/
+.theme-switcher-btn:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+/*Theme switcher button, when hovered in dark.*/
+[data-theme='dark'] .theme-switcher-btn:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
