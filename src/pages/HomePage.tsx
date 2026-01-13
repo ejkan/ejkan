@@ -23,7 +23,7 @@ export default function HomePage() {
                 {/* Middle Column: Portrait Image */}
                 <div className="hero-image-center">
                     <motion.img
-                        src={profileImg}
+                        src={profileImg.src}
                         alt="Portrait"
                         className="profile-image"
                         initial={{ scale: 0, opacity: 0 }}

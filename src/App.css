@@ -1,6 +1,6 @@
 /* CSS Cleaned up */
 :root {
-    /* Light Theme Colors (Default) */
+    /* Light Theme Colours (Default) */
     --color-bg: #f2e9e4;
     --color-text: #4a4e69;
     --color-primary: #9a8c98;
@@ -9,7 +9,7 @@
 }
 
 [data-theme='dark'] {
-    /* Dark Theme Colors */
+    /* Dark Theme Colours */
     --color-bg: #22223b;
     --color-text: #f2e9e4;
     --color-primary: #c9ada7;
