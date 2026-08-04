@@ -1,3 +1,4 @@
+// Theme Switcher Component
 'use client';
 
 import { useState, useEffect } from 'react';

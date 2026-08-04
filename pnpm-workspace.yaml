@@ -3,7 +3,11 @@ packages:
   - packages/**
   - '!**/test/**'
 
+allowBuilds:
+  sharp: true
+
 onlyBuiltDependencies:
   - '@swc/core'
   - '@tailwindcss/oxide'
   - esbuild
+  - sharp

@@ -1,4 +1,4 @@
-import { Figma, Github, Instagram, Mail } from 'lucide-react';
+import { Figma, Github, Mail } from 'lucide-react';
 import ThemeSwitcher from './ThemeSwitcher';
 
 /*
@@ -28,9 +28,6 @@ export default function Contact() {
                 </a>
                 <a href="https://github.com/ejkan" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--color-text)' }}>
                     <Github size={24} />
-                </a>
-                <a href="https://instagram.com/ejkan_" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--color-text)' }}>
-                    <Instagram size={24} />
                 </a>
                 <a href="mailto:ejaekan@pm.me" style={{ color: 'var(--color-text)' }}>
                     <Mail size={24} />

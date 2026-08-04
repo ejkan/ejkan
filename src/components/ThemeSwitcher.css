@@ -1,4 +1,4 @@
-/*Theme switcher button, which changed with theme variants.*/
+/*Theme switcher button, which will be changed by theme variants.*/
 .theme-switcher-btn {
     background: none;
     border: none;
@@ -12,12 +12,12 @@
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-/*Theme switcher button, when hovered in light.*/
+/*Theme switcher button, when user hovered in light.*/
 .theme-switcher-btn:hover {
     background-color: rgba(0, 0, 0, 0.1);
 }
 
-/*Theme switcher button, when hovered in dark.*/
+/*Theme switcher button, when user hovered in dark.*/
 [data-theme='dark'] .theme-switcher-btn:hover {
     background-color: rgba(255, 255, 255, 0.1);
 }
