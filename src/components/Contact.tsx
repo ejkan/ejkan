@@ -1,10 +1,10 @@
-import { Figma, Github, Mail } from 'lucide-react';
+import {PaintbrushVertical, CatIcon, Mail } from 'lucide-react';
 import ThemeSwitcher from './ThemeSwitcher';
 
 /*
- * Contact Component
- * Displays social media links and contact info.
- * Icons provided by lucide-react at https://lucide.dev.
+ * This conponent displays SNS links and E-mail info.
+ * Icons provided by Lucide at https://lucide.dev.
+ * Replaced icons into commons, instead of registered trademarks.
 */
 
 export default function Contact() {
@@ -24,12 +24,12 @@ export default function Contact() {
                 gap: '2rem',
             }}>
                 <a href="https://figma.com/@ejdsin" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--color-text)' }}>
-                    <Figma size={24} />
+                    <PaintbrushVertical size={24} />
                 </a>
                 <a href="https://github.com/ejkan" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--color-text)' }}>
-                    <Github size={24} />
+                    <CatIcon size={24} />
                 </a>
-                <a href="mailto:ejaekan@pm.me" style={{ color: 'var(--color-text)' }}>
+                <a href="mailto:ejkan@pm.me" style={{ color: 'var(--color-text)' }}>
                     <Mail size={24} />
                 </a>
             </div>

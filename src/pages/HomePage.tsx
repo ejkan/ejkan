@@ -4,15 +4,14 @@ import './HomePage.css';
 import profileImg from '../assets/imgs/pfp.avif';
 
 /*
- * HomePage Component
- * Layout: Title | Image | Subtitle
- * Animation: Image pops up (scales up + fade in)
+ * Which contains Title | Image | Subtitle separately.
+ * Animation will render pops up images. (Using scales up with fade in)
  */
 export default function HomePage() {
     return (
         <div className="home-container">
             <main className="hero-section">
-                {/* Left Column: Title */}
+                {/* Left is title. */}
                 <div className="hero-title-container">
                     <h1 className="hero-title">
                         Call me <br />
@@ -20,7 +19,7 @@ export default function HomePage() {
                     </h1>
                 </div>
 
-                {/* Middle Column: Portrait Image */}
+                {/* Middle is portrait image */}
                 <div className="hero-image-center">
                     <motion.img
                         src={profileImg.src}
@@ -37,7 +36,7 @@ export default function HomePage() {
                     />
                 </div>
 
-                {/* Right Column: Subtitle */}
+                {/* Right is subtitle(s). */}
                 <div className="hero-subtitle-container">
                     <p className="hero-subtitle">
                         👩🏼‍🎨 Crafting digital experiences<br />
